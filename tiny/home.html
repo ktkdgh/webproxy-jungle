@@ -1,16 +1,17 @@
 <html>
-<head><title>test</title></head>
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
 <body> 
 <img align="middle" src="image.png">
 Dave O'Hallaron <br><br>
-
-<video controls>
-    <source src="" type="video/mp4">
-</video>
-
-
-
-<br><br><br>
-<a href="/get-adder.html">CGI</a>
+<video controls><source src="testvideo.mp4" type="video/mp4"></video><br><br>
+<form action="cgi-bin/adder" method="get">
+    <h5>숫자를 입력하세요!!</h5>
+    <p>first Number  : <input type="text" name="first"></p>
+    <p>second Number : <input type="text" name="second"></p>
+    <button type="submit">결과보기</button>
+</form>
 </body>
 </html>
