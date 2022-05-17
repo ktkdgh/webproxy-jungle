@@ -20,8 +20,7 @@ int main(void) {
     sscanf(buf, "first=%d", &n1);
     sscanf(p+1, "second=%d", &n2);
   }
-  printf("n1:: %d\n", n1);
-  printf("n2:: %d\n", n2);
+  
   /* Make the response body */
   sprintf(content, "QUERY_STRING = %s", buf);
   sprintf(content, "Welcome to add.com : ");
