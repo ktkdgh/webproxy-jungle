@@ -83,7 +83,7 @@ void doit(int fd) {
 void clienterror(int fd, char *cause, char *errnum, char *shortmsg, char *longmsg) {
   char buf[MAXLINE], body[MAXBUF];
 
-  /* Build the HTTP response body */
+  /* Build the HTTP response body */-
   sprintf(body, "<html><title>Tiny Error</title>");
   sprintf(body, "%s<body bgcolor=""ffffff"">\r\n", body);
   sprintf(body, "%s%s : %s\r\n", body, errnum, shortmsg);
